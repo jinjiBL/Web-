@@ -1,0 +1,21 @@
+create table server(
+ id int(4) not null primary key auto_increment,
+ name char(20) not null,
+ class varchar(20) not null,
+ o_num int(16),
+S_id varchar(8),
+C_id varchar(8)
+) ;
+
+
+create table orders(
+  id int(4) not null primary key auto_increment,
+ name char(20) not null,
+num int(16),
+o_num int(16),
+I_num int(16),
+S_id varchar(8)
+ ) ;
+
+insert into server values (0,'第一服务商','服务商A',10,'A',0);
+
